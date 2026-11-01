@@ -22,17 +22,18 @@ Create a requirements.txt file with the following content:
 
 django==2.1.7 scikit-learn imbalanced-learn matplotlib seaborn pandas numpy pymysql
 
-Install dependencies with:
+# Install dependencies with:
 
 pip install -r requirements.txt
 Setup Instructions
+
 1. Install Python 3.7.2
 Download from python.org
-
 During installation, check Add Python to PATH
+# 
 2. Install Django 2.1.7
-
 pip install django==2.1.7
+# 
 3. Set Up WAMP Server
 Download and install from https://www.wampserver.com/en/
 
@@ -41,6 +42,7 @@ Start WAMP and make sure MySQL is running
 Open http://localhost/phpmyadmin in browser
 
 Create a database named fraud
+# 
 Use the SQL in database.txt to create the table:
 
 CREATE TABLE register (
@@ -50,6 +52,7 @@ CREATE TABLE register (
     email VARCHAR(50),
     address VARCHAR(80)
 );
+# 
 4. Configure Django to Use MySQL
 Edit your settings.py:
 
@@ -65,6 +68,7 @@ DATABASES = {
 }
 import pymysql
 pymysql.install_as_MySQLdb()
+# 
 5. Run the App
 
 python manage.py makemigrations
@@ -85,6 +89,6 @@ Route	Description
 /BalancedData	SMOTE balancing details
 /Predict.html	Upload prediction file form
 /PredictAction	Run fraud detection on uploaded file
-
+# 
 License
 This project is for educational use. Modify and reuse with attribution
