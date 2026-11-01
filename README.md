@@ -1,7 +1,8 @@
 # Online-Fraud-Payment-Detection-Using-Balanced-ML-Algorithms
 This Django-based web application detects fraudulent financial transactions using machine learning. It provides an end-to-end interface from data loading, Preprocessing, training models, and evaluating results.
 
-Features
+# FEATURES:
+
 User registration and login
 Upload transaction test files
 Detect fraud using trained ML models
@@ -9,12 +10,14 @@ Balanced dataset handling with SMOTE
 Train and compare models (Random Forest & Naive Bayes)
 Display metrics: Accuracy, Precision, Recall, F1-Score
 Visualizations: Confusion Matrix & Comparison Graphs
-Dataset
+
+# Dataset:
 Original dataset: Dataset/PS_20174392719_1491204439457_log.csv
 
 Contains financial transaction records
 Binary label isFraud for classification
-Requirements
+
+# Requirements:
 Create a requirements.txt file with the following content:
 
 django==2.1.7 scikit-learn imbalanced-learn matplotlib seaborn pandas numpy pymysql
